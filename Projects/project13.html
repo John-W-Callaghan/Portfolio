@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../projects.css">
+    <title>Data Visualization Project - FreeCodeCamp Page Views Analysis</title>
+</head>
+<body>
+    <header>
+        <h1>Data Visualization Project</h1>
+        <a href="https://www.linkedin.com/in/john-w-callaghan"><img src="../Assets/Linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+        <a href="https://github.com/John-W-Callaghan"><img src="../Assets/github.png" alt="GitHub" style="width: 30px; height: 30px;"></a>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../about.html">About Me</a>
+        <a href="../achievements.html">Achievements</a>
+        <a href="../experience.html">Experience</a>
+    </nav>
+    <section>
+        <h2> Page Views Analysis</h2>
+        
+        <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>This data visualization project focuses on analyzing the page views of the FreeCodeCamp forum from May 2016 to December 2019. The project demonstrates proficiency in data manipulation, statistical analysis, and creating insightful visualizations using Python libraries such as Pandas, Matplotlib, and Seaborn.</p>
+        </div>
+
+        <div class="project-details">
+            <h3>Key Components</h3>
+            <ol>
+                <li><strong>Data Preparation:</strong>
+                    <ul>
+                        <li>Load CSV file with forum page view data</li>
+                        <li>Clean data by removing outliers (removing bottom and top 2.5% of values)</li>
+                        <li>Convert date column to datetime format</li>
+                    </ul>
+                </li>
+                <li><strong>Visualization Types:</strong>
+                    <ul>
+                        <li>Line Plot: Daily page views over time</li>
+                        <li>Bar Plot: Average monthly page views by year</li>
+                        <li>Box Plot: Year-wise and month-wise page view distributions</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="technical-details">
+            <h3>Technical Implementation</h3>
+            <p>The project utilizes three main functions to create different visualizations:</p>
+            <ul>
+                <li><code>draw_line_plot()</code>: Creates a line graph showing daily page views</li>
+                <li><code>draw_bar_plot()</code>: Generates a bar chart of average monthly page views</li>
+                <li><code>draw_box_plot()</code>: Produces box plots to analyze page view trends and seasonality</li>
+            </ul>
+        </div>
+
+        <div class="libraries-used">
+            <h3>Libraries Used</h3>
+            <ul>
+                <li>Pandas: Data manipulation and analysis</li>
+                <li>Matplotlib: Creating static, animated, and interactive visualizations</li>
+                <li>Seaborn: Statistical data visualization based on Matplotlib</li>
+            </ul>
+        </div>
+
+        <div class="key-challenges">
+            <h3>Key Challenges and Solutions</h3>
+            <ul>
+                <li>Data Cleaning: Implemented outlier removal to ensure data quality</li>
+                <li>Date Handling: Converted and parsed dates for accurate time-based analysis</li>
+                <li>Visualization Formatting: Ensured clear and informative plot layouts</li>
+            </ul>
+        </div>
+
+        <div class="project-insights">
+            <h3>Project Insights</h3>
+            <p>The visualizations provide a comprehensive view of FreeCodeCamp forum page views, revealing:</p>
+            <ul>
+                <li>Overall trend of forum engagement</li>
+                <li>Seasonal variations in page views</li>
+                <li>Year-to-year changes in forum activity</li>
+            </ul>
+        </div>
+
+        <div class="code-repository">
+            <h3>Code Repository</h3>
+            <a href="https://github.com/John-W-Callaghan/Portfolio" target="_blank">View Project on GitHub</a>
+        </div>
+
+        <div class="back-link-container">
+            <a href="../projects.html" class="back-link">Back to Projects</a>
+        </div>
+    </section>
+</body>
+</html>

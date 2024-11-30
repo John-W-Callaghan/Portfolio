@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../projects.css">
+    <title>Video Game Search Engine - John Callaghan</title>
+</head>
+<body>
+    <header>
+        <h1>Video Game Search Engine</h1>
+        <a href="https://www.linkedin.com/in/john-callaghan-35816b269"><img src="../Assets/Linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+        <a href="https://github.com/John-W-Callaghan"><img src="../Assets/github.png" alt="GitHub" style="width: 30px; height: 30px;"></a>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../about.html">About Me</a>
+        <a href="../achievements.html">Achievements</a>
+        <a href="../experience.html">Experience</a>
+    </nav>
+    <section>
+        <h2></h2>
+        <div>
+            <h3>Project Explained</h3>
+            
+            <div>
+                <img src="../Assets/Search engine.png" alt="Project 1">
+                <p>This project involved building a custom search engine for video games, using HTML files as the dataset for my information retrieval module at university. The process covered several steps, from extracting data to implementing TF-IDF for handling search queries.</p>
+                
+                <p><strong>1. HTML File Reading:</strong> I began by reading each HTML file from a specified folder using a function called `Htmlread`. This function utilized BeautifulSoup to parse the HTML structure, extract the title and main content from each file, and return the information in a dictionary format. I also stored the file paths for easy reference during searches.</p>
+                
+                <p><strong>2. Extracting Main Description:</strong> I created a `description` function to identify and extract the main description of each game. It searches for specific comment tags like `DESCRIPTION ` and `/DESCRIPTION` in the HTML files to isolate the section that describes the game, ensuring only relevant information is captured.</p>
+                
+                <p><strong>3. Query Preprocessing:</strong> To enhance the effectiveness of the search results, I used the `preprocess_query` function. This function tokenizes the input query, removes punctuation, and expands the query using synonyms from the WordNet corpus. Expanding queries in this way increases the flexibility and relevance of the search.</p>
+                
+                <p><strong>4. Tokenization and Lemmatization:</strong> The core part of the project was processing the text content of each HTML file through the `tokenizor` function. This function tokenized the text, removed punctuation, converted everything to lowercase, applied lemmatization (reducing words to their base forms), and removed stopwords. I also gave extra weighting to titles and headings within the content to boost the relevance of those sections during searches.</p>
+                
+                <p><strong>5. TF-IDF Vectorization:</strong> After processing the text, I used the `TfidfVectorizer` from scikit-learn to convert the text data into a numerical matrix. This matrix assigns importance to words based on their frequency within the corpus, enabling me to compare queries and documents using cosine similarity.</p>
+                
+                <p><strong>6. Search Functionality:</strong> I implemented a `search` function that takes user queries, processes them, and compares them to the TF-IDF matrix. The function ranks documents based on their relevance to the query, returning the top results, including the title, description, and file name. Cosine similarity ensures the most relevant documents are ranked first.</p>
+                
+                <p><strong>7. Displaying Results:</strong> The final step was to format the search results for each query. Each result includes the title and description of the corresponding HTML file, making it easy for users to identify the games they are interested in.</p>
+
+                
+               </div>
+            <div>
+                <a href="https://github.com/John-W-Callaghan/Videogame-Search-engine">Link to project</a>
+                </div>
+            <div class="back-link-container">
+                <a href="../projects.html" class="back-link">Back to Projects</a>
+            </div>
+    </section>
+</body>
+</html>

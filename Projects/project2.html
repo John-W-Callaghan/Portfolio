@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../projects.css">
+    <title>Emotion Predicter - John Callaghan</title>
+</head>
+<body>
+    <header>
+        <h1>Emotion Prediction</h1>
+        <a href="https://www.linkedin.com/in/john-callaghan-35816b269"><img src="../Assets/Linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+        <a href="https://github.com/John-W-Callaghan"><img src="../Assets/github.png" alt="GitHub" style="width: 30px; height: 30px;"></a>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../about.html">About Me</a>
+        <a href="../achievements.html">Achievements</a>
+        <a href="../experience.html">Experience</a>
+    </nav>
+    <section>
+        <h2></h2>
+        <div>
+            <h3>Project Explained</h3>
+            
+            <div>
+                <img src="../Assets/Emotion.png" alt="Project 1">
+
+                <p>This project demonstrates how I used Natural Language Processing (NLP) techniques to predict emotions from text. I built a simple user interface for emotion prediction using logistic regression. Below, I describe the main steps I followed in this process:</p>
+            
+                <p><strong>1. Tokenization and Preprocessing:</strong> First, I defined a function called `tokenize`, which processes the text input by converting it to lowercase and splitting it into individual tokens (words). The function also removes punctuation and stopwords, and it applies stemming using NLTK’s `PorterStemmer` to reduce words to their base form. This preprocessing step was essential to convert raw text into a more manageable format for analysis.</p>
+                            
+                <p><strong>2. Data Loading and Preprocessing:</strong> I loaded a CSV file containing text data with corresponding emotion labels. For each sentence in the dataset, I applied the `tokenize` function to preprocess the data. This ensured that each sentence was ready for feature extraction.</p>
+                            
+                <p><strong>3. Train-Test Split:</strong> After preprocessing the data, I split the dataset into training and testing sets using scikit-learn's `train_test_split` function. This allowed me to build and evaluate the model effectively. In this setup, the text data (X) represents the sentences, and the labels (y) correspond to the emotions.</p>
+                            
+                <p><strong>4. Vectorization:</strong> To convert the text into numerical features, I used `CountVectorizer`, which transforms the text data into a matrix of token counts. This step created feature vectors based on word frequencies, which I used as input for the machine learning model.</p>
+                            
+                <p><strong>5. Logistic Regression Model:</strong> I trained a logistic regression model to classify sentences into different emotion categories, such as sadness, joy, love, anger, fear, and surprise. Once trained on the dataset, the model predicted emotions for the test data, and I calculated the accuracy score to measure its performance on unseen data.</p>
+                            
+                <p><strong>6. Emotion Prediction Function:</strong> I created a function called `predict_emotion` to take any input sentence, preprocess it using the `tokenize` function, vectorize it with `CountVectorizer`, and then predict the emotion using the trained logistic regression model. The function then mapped the predicted label to the corresponding emotion.</p>
+                            
+                <p><strong>7. Graphical User Interface (GUI):</strong> I built a simple GUI using Tkinter, a Python library for creating desktop applications. The GUI allows users to input a sentence, click the "Predict Emotion" button, and view the predicted emotion in real-time. The interface includes input fields and buttons to make it user-friendly.</p>
+                            
+                <p><strong>8. Running the Application:</strong> The final step involved running the Tkinter-based application. When a user enters a sentence and clicks the predict button, the application processes the sentence and displays the predicted emotion on the screen. This interactive feature makes the model accessible and easy to test with various inputs.</p>
+                
+            </div>
+        </div>
+            <div>
+                <a href="https://github.com/John-W-Callaghan/Videogame-Search-engine">Link to project</a>
+                </div>
+            <div class="back-link-container">
+                <a href="../projects.html" class="back-link">Back to Projects</a>
+            </div>
+    </section>
+</body>
+</html>

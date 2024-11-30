@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../projects.css">
+    <title>Portfolio Website - John Callaghan</title>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Website</h1>
+        <a href="https://www.linkedin.com/in/john-callaghan-35816b269"><img src="../Assets/Linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+        <a href="https://github.com/John-W-Callaghan"><img src="../Assets/github.png" alt="GitHub" style="width: 30px; height: 30px;"></a>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../about.html">About Me</a>
+        <a href="../achievements.html">Achievements</a>
+        <a href="../experience.html">Experience</a>
+    </nav>
+    <section>
+        <h2></h2>
+        <div>
+            <h3>Project's Explained</h3>
+            
+            <div>
+                <img src="../Assets/A.png" alt="Project Mean Variance">
+
+                <div>
+                    <h3>Mean Variance Standard Deviation Calculator</h3>
+    
+                    <p>This project features a function called `calculate` that computes various statistical measures for a given list of 9 numbers. Below, I detail the steps I followed in implementing this function:</p>
+    
+                    <p><strong>1. Input Validation:</strong> I began by implementing a crucial validation check to ensure the input list contains exactly 9 numbers. If the list does not meet this requirement, the function raises a `ValueError` to prevent incorrect calculations.</p>
+    
+                    <p><strong>2. List Reshaping:</strong> The input list is reshaped into a 3x3 NumPy array. This allows for comprehensive statistical calculations across rows, columns, and the entire matrix.</p>
+    
+                    <p><strong>3. Statistical Computations:</strong> Using NumPy's powerful array operations, I calculated several key statistical measures:
+                    <ul>
+                        <li>Mean values for each row, column, and the entire matrix</li>
+                        <li>Variance values for rows, columns, and the entire matrix</li>
+                        <li>Standard deviation for rows, columns, and the entire matrix</li>
+                        <li>Maximum values for rows, columns, and the entire matrix</li>
+                        <li>Minimum values for rows, columns, and the entire matrix</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>4. Result Formatting:</strong> The calculated statistics are compiled into a dictionary with specific keys:
+                    <ul>
+                        <li>`mean`: Contains mean values for rows, columns, and matrix</li>
+                        <li>`variance`: Contains variance values for rows, columns, and matrix</li>
+                        <li>`standard deviation`: Contains standard deviation values for rows, columns, and matrix</li>
+                        <li>`max`: Contains maximum values for rows, columns, and matrix</li>
+                        <li>`min`: Contains minimum values for rows, columns, and matrix</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>5. Numpy Utilization:</strong> This project leveraged NumPy's array manipulation and statistical functions, demonstrating efficient numerical computing in Python. The use of NumPy's `axis` parameter allowed for flexible calculations across different dimensions of the array.</p>
+    
+                    <p><strong>6. Error Handling:</strong> The function includes robust error handling to ensure it only processes lists with exactly 9 elements, providing clear feedback if the input is invalid.</p>
+    
+                    <p>This project enhanced my skills in:</p>
+                    <ul>
+                        <li>Numerical computing with NumPy</li>
+                        <li>Statistical calculations</li>
+                        <li>Array manipulation</li>
+                        <li>Error handling and input validation</li>
+                    </ul>
+    
+                    <p>The function serves as a versatile tool for quick statistical analysis, capable of computing multiple statistical measures from a single input list.</p>
+    
+                </div>
+    
+            </div>
+        </div>
+            <div>
+                <a href="https://github.com/John-W-Callaghan/Portfolio">Link to project</a>
+            </div>
+            <div class="back-link-container">
+                <a href="../projects.html" class="back-link">Back to Projects</a>
+            </div>
+    </section>
+</body>
+</html>

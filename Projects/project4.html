@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../projects.css">
+    <title>Free code Camp Projects - John Callaghan</title>
+</head>
+<body>
+    <header>
+        <h1>Free code Camp Projects</h1>
+        <a href="https://www.linkedin.com/in/john-callaghan-35816b269"><img src="../Assets/Linkedin.png" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+        <a href="https://github.com/John-W-Callaghan"><img src="../Assets/github.png" alt="GitHub" style="width: 30px; height: 30px;"></a>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../about.html">About Me</a>
+        <a href="../achievements.html">Achievements</a>
+        <a href="../experience.html">Experience</a>
+    </nav>
+    <section>
+        <h2></h2>
+        <div>
+            <h3>Free code Camp - Project's Explained</h3>
+            
+            <div>
+                <img src="../Assets/A.png" alt="Project 1">
+                <h3>Arithmetic Formatter</h3>
+                <p>This project showcases how I implemented a function called `arithmetic_arranger` to organize and display simple arithmetic problems in a user-friendly format. The function accepts a list of problems and returns them arranged neatly, with options to display the answers. Below, I outline the key steps I followed in building this project:</p>
+
+                <p><strong>1. Function Definition and Input Validation:</strong> I began by defining the function `arithmetic_arranger`, which accepts a list of arithmetic problems and an optional boolean parameter to show answers. The first step is to validate the input to ensure it meets specific criteria. If more than five problems are provided, the function returns an error message stating "Error: Too many problems."</p>
+
+                <p><strong>2. Problem Arrangement Initialization:</strong> To organize the output, I created a list called `arranged_problems` with four empty strings. This list will later be used to store each part of the formatted problems: the first operand, the second operand with the operator, the line, and the result if requested.</p>
+
+                <p><strong>3. Parsing Each Problem:</strong> I looped through each problem in the input list, splitting the string into its components: the first operand, the operator, and the second operand. This step allows me to perform validations and computations on each individual problem.</p>
+
+                <p><strong>4. Operator Validation:</strong> I checked if the operator is either '+' or '-'. If not, the function returns "Error: Operator must be '+' or '-'." This step ensures that only valid arithmetic operations are processed.</p>
+
+                <p><strong>5. Digit and Length Validation:</strong> I validated that both operands contain only digits and that they do not exceed four digits in length. If any operand fails these checks, the function returns appropriate error messages such as "Error: Numbers must only contain digits." or "Error: Numbers cannot be more than four digits."</p>
+
+                <p><strong>6. Performing Calculations:</strong> Depending on the operator, I performed the corresponding arithmetic operation (addition or subtraction) and stored the result. This ensures that the final output includes the correct answer when requested.</p>
+
+                <p><strong>7. Formatting the Output:</strong> I calculated the width required for each problem based on the longest operand, ensuring proper alignment. The arranged output is built by right-justifying the operands and results and left-justifying the operator, providing a clean presentation.</p>
+
+                <p><strong>8. Returning the Final Arrangement:</strong> Finally, the function returns the arranged problems either with or without the answers, depending on the `show_answers` parameter. If the user requests answers, an additional row for the results is appended to the output. This feature enhances the usability of the function by allowing users to see their computations alongside the formatted problems.</p>
+
+                <p>This project provided me with valuable experience in implementing input validation, string manipulation, and formatted output in Python, reinforcing my skills in programming and problem-solving.</p>
+
+            
+            </div>
+            
+
+           
+            <div>
+                <h3>Budget App</h3>
+                <p>This project involves the implementation of a `Category` class designed for budgeting and expense tracking, alongside a function called `create_spend_chart` to visualize spending across different categories. Below are the steps I followed to develop these components:</p>
+
+                <p><strong>1. Class Definition:</strong> I started by defining the `Category` class, which requires a name upon initialization. This class contains a ledger, represented as a list, to track deposits and withdrawals related to the category.</p>
+
+                <p><strong>2. Deposit Method:</strong> I implemented the `deposit` method, allowing users to add an amount to the ledger with an optional description. The deposit records the transaction as a dictionary containing the amount and description.</p>
+
+                <p><strong>3. Withdraw Method:</strong> The `withdraw` method enables users to deduct an amount from the category's balance. It first checks if there are sufficient funds using the `check_funds` method. If funds are available, it records the withdrawal as a negative amount in the ledger and returns `True`; otherwise, it returns `False`.</p>
+
+                <p><strong>4. Balance Calculation:</strong> The `get_balance` method calculates the current balance by summing all amounts in the ledger. This method is essential for providing users with an up-to-date view of their finances.</p>
+
+                <p><strong>5. Transfer Method:</strong> I introduced a `transfer` method to allow users to move funds from one category to another. This method checks if sufficient funds are available, withdraws the specified amount from the current category, and deposits it into the target category with appropriate descriptions.</p>
+
+                <p><strong>6. Funds Check:</strong> The `check_funds` method verifies if the requested withdrawal amount does not exceed the current balance. This validation ensures that users cannot withdraw more than they have.</p>
+
+                <p><strong>7. String Representation:</strong> I defined the `__str__` method to provide a user-friendly string representation of the `Category` object. This method formats the category name, individual transactions, and the total balance, ensuring the output is clearly readable.</p>
+
+                <p><strong>8. Spend Chart Function:</strong> The `create_spend_chart` function generates a visual representation of spending by category. It calculates the total withdrawals for each category and determines the percentage spent relative to total expenses. The chart is formatted to display percentage labels alongside a graphical representation using 'o' to indicate spending levels.</p>
+
+                <p><strong>9. Chart Formatting:</strong> The function creates a horizontal bar chart, listing percentages from 100% down to 0%. It also formats the category names vertically alongside the chart, ensuring the chart is clear and informative. This dual-axis presentation enhances the visualization of spending habits.</p>
+
+                <p>This project has enhanced my understanding of object-oriented programming principles, particularly in how to structure classes and methods effectively. Additionally, creating the spend chart has improved my skills in data visualization and string formatting in Python.</p>
+            </div>
+
+            <div>
+                <h3>Polygon Area Calculator</h3>
+
+                <p>This project involves the implementation of a `Rectangle` class and a `Square` class that inherits from it. These classes provide a structured approach to handling geometric shapes and calculating various properties. Below, I outline the key components and functionalities:</p>
+
+                <p><strong>1. Rectangle Class Definition:</strong> I began by defining the `Rectangle` class, which requires a width and a height as parameters during initialization. These parameters are stored as attributes to represent the dimensions of the rectangle.</p>
+                
+                <p><strong>2. Setters for Width and Height:</strong> I implemented methods `set_width` and `set_height`, allowing users to modify the width and height of the rectangle after its creation. This provides flexibility in adjusting the dimensions as needed.</p>
+                
+                <p><strong>3. Area Calculation:</strong> The `get_area` method calculates the area of the rectangle by multiplying its width by its height. This method provides a quick way to obtain the rectangle's size.</p>
+                
+                <p><strong>4. Perimeter Calculation:</strong> I defined the `get_perimeter` method, which computes the perimeter of the rectangle using the formula \(2 \times (\text{width} + \text{height})\). This method is essential for understanding the rectangle's boundary length.</p>
+                
+                <p><strong>5. Diagonal Calculation:</strong> The `get_diagonal` method returns the length of the diagonal of the rectangle, calculated using the Pythagorean theorem. This provides insight into the rectangle's dimensions from a geometric perspective.</p>
+                
+                <p><strong>6. Picture Representation:</strong> The `get_picture` method creates a visual representation of the rectangle using asterisks ('*'). If the rectangle's dimensions exceed 50 units, the method returns a message indicating that it is "Too big for picture." Otherwise, it constructs a string representation of the rectangle's shape.</p>
+                
+                <p><strong>7. Amount Inside:</strong> I implemented the `get_amount_inside` method to determine how many instances of a given shape can fit inside the rectangle. This method uses integer division to calculate how many shapes can fit along the width and height.</p>
+                
+                <p><strong>8. String Representation:</strong> The `__str__` method provides a user-friendly string representation of the rectangle, detailing its width and height. This enhances usability by allowing easy identification of the rectangle's dimensions.</p>
+                
+                <p><strong>9. Square Class Definition:</strong> I created the `Square` class as a subclass of `Rectangle`. The square is initialized with a single side length, which sets both width and height to the same value. This encapsulates the properties of a square while leveraging the existing rectangle functionality.</p>
+                
+                <p><strong>10. Set Side Method:</strong> The `set_side` method in the `Square` class allows users to set the length of a side, automatically adjusting both width and height. This ensures that the square maintains its geometric properties.</p>
+                
+                <p><strong>11. Overridden Setters:</strong> I overridden the `set_width` and `set_height` methods in the `Square` class to call the `set_side` method, ensuring that changing either dimension updates both sides to remain consistent with the properties of a square.</p>
+                
+                <p><strong>12. String Representation of Square:</strong> The `__str__` method for the `Square` class provides a string representation that reflects its side length, making it easy to understand its dimensions.</p>
+                
+                <p>This project has enhanced my understanding of object-oriented programming concepts such as inheritance, method overriding, and encapsulation while providing practical examples of how to manage geometric shapes programmatically.</p>
+
+            </div>
+
+            <div>
+                <h3>Probability Calculator</h3>
+
+                <p>This project involves creating a simulation of drawing balls from a hat using a `Hat` class and an `experiment` function to calculate the probability of drawing specific colored balls. Below, I outline the key components and functionalities:</p>
+
+                <p><strong>1. Hat Class Definition:</strong> The `Hat` class is designed to represent a collection of colored balls. During initialization, it accepts keyword arguments that specify the colors of the balls and their respective counts. This allows for the dynamic creation of a hat filled with different colored balls based on user input.</p>
+                
+                <p><strong>2. Contents Initialization:</strong> In the constructor (`__init__`), I initialize the `contents` attribute as an empty list and populate it by iterating over the keyword arguments. Each color is added to the `contents` list according to its specified count, creating a representation of the balls in the hat.</p>
+                
+                <p><strong>3. Ball Drawing Functionality:</strong> The `draw` method is responsible for simulating the drawing of balls from the hat. It takes an integer parameter, `num_balls`, which specifies how many balls to draw. If the number of balls requested is greater than or equal to the number of balls in the hat, the method returns all the contents of the hat.</p>
+                
+                <p><strong>4. Random Ball Selection:</strong> If fewer balls are requested, the method proceeds to randomly select balls from the `contents`. Using `random.choice`, it selects a ball, removes it from the `contents`, and appends it to the `drawn_balls` list. This ensures that each ball can only be drawn once per experiment.</p>
+                
+                <p><strong>5. Experiment Function:</strong> The `experiment` function simulates multiple experiments to determine the probability of drawing a specific combination of balls. It accepts four parameters: `hat` (the instance of the `Hat` class), `expected_balls` (a dictionary specifying the expected counts of each color), `num_balls_drawn` (the number of balls to draw in each experiment), and `num_experiments` (the total number of experiments to conduct).</p>
+                
+                <p><strong>6. Successful Experiment Counting:</strong> Within the `experiment` function, I maintain a count of successful experiments where the drawn balls match the expected counts. For each experiment, a deep copy of the hat is created using `copy.deepcopy` to ensure that each experiment starts with the original set of balls.</p>
+                
+                <p><strong>7. Drawing Balls in Experiments:</strong> After drawing the specified number of balls, I create a dictionary (`drawn_dict`) that counts the occurrences of each color in the drawn balls. This allows for easy comparison with the `expected_balls` criteria.</p>
+                
+                <p><strong>8. Success Check:</strong> A success check is performed to ensure that all expected colors and their counts are met in the drawn balls. If any expected color is not found or its count is less than required, the experiment is marked as unsuccessful.</p>
+                
+                <p><strong>9. Probability Calculation:</strong> At the end of all experiments, the function calculates the probability of successfully drawing the expected combination of balls by dividing the number of successful experiments by the total number of experiments conducted.</p>
+                
+                <p>This project has reinforced my understanding of object-oriented programming and probability simulations, demonstrating how to model real-world scenarios using classes and functions in Python.</p>
+                
+
+            </div>
+        </div>
+            <div>
+                <a href="https://github.com/John-W-Callaghan/Portfolio">Link to project</a>
+                </div>
+            <div class="back-link-container">
+                <a href="../projects.html" class="back-link">Back to Projects</a>
+            </div>
+    </section>
+</body>
+</html>
