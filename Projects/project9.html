@@ -71,6 +71,316 @@
                     <p>The function serves as a versatile tool for quick statistical analysis, capable of computing multiple statistical measures from a single input list.</p>
     
                 </div>
+
+                <div>
+                    <h3>Demographic Data Analyzer</h3>
+    
+                    <p>This project features a comprehensive function called `calculate_demographic_data` that performs in-depth analysis on a demographic dataset using pandas. The function extracts various insights from the data, demonstrating advanced data manipulation and statistical analysis skills.</p>
+    
+                    <p><strong>1. Data Loading:</strong> The project begins by reading a CSV file containing demographic information using pandas' `read_csv()` method, preparing the data for analysis.</p>
+    
+                    <p><strong>2. Race Representation Analysis:</strong> The function calculates the count of each race represented in the dataset using `value_counts()`, providing a clear breakdown of racial demographics.</p>
+    
+                    <p><strong>3. Demographic Metrics Calculation:</strong> The function computes multiple key demographic metrics:
+                    <ul>
+                        <li>Average age of men in the dataset</li>
+                        <li>Percentage of individuals with a Bachelor's degree</li>
+                        <li>Percentage of people with advanced education earning over $50K</li>
+                        <li>Percentage of people without advanced education earning over $50K</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>4. Work Hours and Earnings Analysis:</strong> The project delves into work-related insights:
+                    <ul>
+                        <li>Identifying the minimum number of work hours per week</li>
+                        <li>Calculating the percentage of minimum-hour workers earning over $50K</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>5. Geographic and Occupation Insights:</strong> The function goes beyond basic demographics to provide:
+                    <ul>
+                        <li>Identification of the country with the highest percentage of high earners</li>
+                        <li>Determining the top occupation for high earners in India</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>6. Advanced Pandas Techniques:</strong> The implementation showcases sophisticated pandas skills:
+                    <ul>
+                        <li>Filtering data using boolean indexing</li>
+                        <li>Calculating percentages and proportions</li>
+                        <li>Handling complex conditional selections</li>
+                        <li>Utilizing method chaining for efficient data manipulation</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>7. Flexible Output:</strong> The function offers two output modes:
+                    <ul>
+                        <li>Printing detailed results to console</li>
+                        <li>Returning a dictionary of calculated metrics</li>
+                    </ul>
+                    </p>
+    
+                    <p>This project enhanced my skills in:</p>
+                    <ul>
+                        <li>Data analysis with pandas</li>
+                        <li>Statistical computation</li>
+                        <li>Data filtering and transformation</li>
+                        <li>Handling complex demographic datasets</li>
+                    </ul>
+    
+                    <p>The function serves as a powerful tool for extracting meaningful insights from demographic data, demonstrating the power of Python and pandas in data analysis.</p>
+    
+                </div>
+                <div>
+                    <h3>Medical Examination Data Visualizer</h3>
+    
+                    <p>This project demonstrates advanced data preprocessing and visualization techniques using medical examination data, leveraging pandas, seaborn, and matplotlib to create insightful visualizations.</p>
+    
+                    <p><strong>1. Data Preprocessing:</strong> The project begins with sophisticated data transformation:
+                    <ul>
+                        <li>Calculating an 'overweight' indicator using Body Mass Index (BMI)</li>
+                        <li>Normalizing categorical health indicators (cholesterol, glucose) to binary values</li>
+                        <li>Ensuring data quality through intelligent preprocessing</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>2. Categorical Plot Creation:</strong> The `draw_cat_plot()` function implements a comprehensive categorical visualization:
+                    <ul>
+                        <li>Uses `pd.melt()` to reshape the dataset for visualization</li>
+                        <li>Groups data by cardiovascular risk and various health indicators</li>
+                        <li>Employs seaborn's `catplot()` to create a comparative bar chart</li>
+                        <li>Visualizes the distribution of health indicators across different cardiovascular risk groups</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>3. Heat Map Visualization:</strong> The `draw_heat_map()` function offers deep insights into data correlations:
+                    <ul>
+                        <li>Implements advanced data cleaning by removing outliers</li>
+                        <li>Calculates a comprehensive correlation matrix</li>
+                        <li>Creates a masked heatmap to highlight significant correlations</li>
+                        <li>Uses the 'viridis' color palette for clear visualization</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>4. Advanced Data Manipulation Techniques:</strong> Key technical skills demonstrated:
+                    <ul>
+                        <li>Quantile-based data filtering</li>
+                        <li>Boolean indexing</li>
+                        <li>Data transformation</li>
+                        <li>Statistical correlation analysis</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>5. Visualization Libraries Mastery:</strong> The project showcases expertise in:
+                    <ul>
+                        <li>Pandas for data manipulation</li>
+                        <li>Seaborn for statistical data visualization</li>
+                        <li>Matplotlib for advanced plotting</li>
+                        <li>NumPy for numerical computing</li>
+                    </ul>
+                    </p>
+    
+                    <p>This project enhanced my skills in:</p>
+                    <ul>
+                        <li>Data preprocessing</li>
+                        <li>Statistical visualization</li>
+                        <li>Advanced data analysis techniques</li>
+                        <li>Python data science libraries</li>
+                    </ul>
+    
+                    <p>The visualizations provide a powerful tool for understanding complex medical examination data, demonstrating how data science techniques can uncover hidden insights in healthcare datasets.</p>
+    
+                </div>
+                <div>
+                    <h3>Sea Level Rise Visualization</h3>
+    
+                    <p>This project creates a comprehensive visualization of sea level rise, demonstrating advanced data analysis and visualization techniques using pandas, matplotlib, and scipy.</p>
+    
+                    <p><strong>1. Data Loading and Initial Visualization:</strong> The project begins by:
+                    <ul>
+                        <li>Reading sea level data from a CSV file</li>
+                        <li>Creating an initial scatter plot of historical sea level measurements</li>
+                        <li>Plotting raw data points to show actual sea level changes</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>2. Linear Regression Analysis:</strong> The visualization incorporates sophisticated statistical analysis:
+                    <ul>
+                        <li>Utilizing scipy's `linregress` to calculate lines of best fit</li>
+                        <li>Creating two separate regression lines for different time periods:
+                            <ul>
+                                <li>First line covering the entire historical dataset</li>
+                                <li>Second line focusing on more recent data (from 2000 onwards)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>3. Forecasting Techniques:</strong> The project demonstrates predictive visualization:
+                    <ul>
+                        <li>Extending the regression lines to forecast sea level rise until 2050</li>
+                        <li>Using different colors to distinguish between full-period and recent-period projections</li>
+                        <li>Allowing visual comparison of long-term and recent trends</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>4. Technical Implementation Highlights:</strong>
+                    <ul>
+                        <li>Dynamic range generation using list comprehension</li>
+                        <li>Precise slope and intercept calculations</li>
+                        <li>Comprehensive data manipulation with pandas</li>
+                        <li>Advanced plotting with matplotlib</li>
+                    </ul>
+                    </p>
+    
+                    <p><strong>5. Visualization Details:</strong>
+                    <ul>
+                        <li>Clear, informative title: "Rise in Sea Level"</li>
+                        <li>Appropriately labeled axes</li>
+                        <li>Large figure size for detailed viewing</li>
+                        <li>Multiple data representation techniques</li>
+                    </ul>
+                    </p>
+    
+                    <p>This project enhanced my skills in:</p>
+                    <ul>
+                        <li>Statistical data analysis</li>
+                        <li>Climate data visualization</li>
+                        <li>Predictive trend analysis</li>
+                        <li>Scientific data presentation</li>
+                    </ul>
+    
+                    <p>The visualization provides a powerful tool for understanding sea level rise trends, demonstrating how data science can illuminate critical environmental changes.</p>
+    
+                </div>
+                <h2> Page Views Analysis</h2>
+        
+        <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>This data visualization project focuses on analyzing the page views of the FreeCodeCamp forum from May 2016 to December 2019. The project demonstrates proficiency in data manipulation, statistical analysis, and creating insightful visualizations using Python libraries such as Pandas, Matplotlib, and Seaborn.</p>
+        </div>
+
+        <div class="project-details">
+            <h3>Key Components</h3>
+            <ol>
+                <li><strong>Data Preparation:</strong>
+                    <ul>
+                        <li>Load CSV file with forum page view data</li>
+                        <li>Clean data by removing outliers (removing bottom and top 2.5% of values)</li>
+                        <li>Convert date column to datetime format</li>
+                    </ul>
+                </li>
+                <li><strong>Visualization Types:</strong>
+                    <ul>
+                        <li>Line Plot: Daily page views over time</li>
+                        <li>Bar Plot: Average monthly page views by year</li>
+                        <li>Box Plot: Year-wise and month-wise page view distributions</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="technical-details">
+            <h3>Technical Implementation</h3>
+            <p>The project utilizes three main functions to create different visualizations:</p>
+            <ul>
+                <li><code>draw_line_plot()</code>: Creates a line graph showing daily page views</li>
+                <li><code>draw_bar_plot()</code>: Generates a bar chart of average monthly page views</li>
+                <li><code>draw_box_plot()</code>: Produces box plots to analyze page view trends and seasonality</li>
+            </ul>
+        </div>
+
+        <div class="libraries-used">
+            <h3>Libraries Used</h3>
+            <ul>
+                <li>Pandas: Data manipulation and analysis</li>
+                <li>Matplotlib: Creating static, animated, and interactive visualizations</li>
+                <li>Seaborn: Statistical data visualization based on Matplotlib</li>
+            </ul>
+        </div>
+
+        <div class="key-challenges">
+            <h3>Key Challenges and Solutions</h3>
+            <ul>
+                <li>Data Cleaning: Implemented outlier removal to ensure data quality</li>
+                <li>Date Handling: Converted and parsed dates for accurate time-based analysis</li>
+                <li>Visualization Formatting: Ensured clear and informative plot layouts</li>
+            </ul>
+        </div>
+
+        <div class="project-insights">
+            <h3>Project Insights</h3>
+            <p>The visualizations provide a comprehensive view of FreeCodeCamp forum page views, revealing:</p>
+            <ul>
+                <li>Overall trend of forum engagement</li>
+                <li>Seasonal variations in page views</li>
+                <li>Year-to-year changes in forum activity</li>
+            </ul>
+        </div>
+        <h2> Page Views Analysis</h2>
+        
+        <div class="project-description">
+            <h3>Project Overview</h3>
+            <p>This data visualization project focuses on analyzing the page views of the FreeCodeCamp forum from May 2016 to December 2019. The project demonstrates proficiency in data manipulation, statistical analysis, and creating insightful visualizations using Python libraries such as Pandas, Matplotlib, and Seaborn.</p>
+        </div>
+
+        <div class="project-details">
+            <h3>Key Components</h3>
+            <ol>
+                <li><strong>Data Preparation:</strong>
+                    <ul>
+                        <li>Load CSV file with forum page view data</li>
+                        <li>Clean data by removing outliers (removing bottom and top 2.5% of values)</li>
+                        <li>Convert date column to datetime format</li>
+                    </ul>
+                </li>
+                <li><strong>Visualization Types:</strong>
+                    <ul>
+                        <li>Line Plot: Daily page views over time</li>
+                        <li>Bar Plot: Average monthly page views by year</li>
+                        <li>Box Plot: Year-wise and month-wise page view distributions</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="technical-details">
+            <h3>Technical Implementation</h3>
+            <p>The project utilizes three main functions to create different visualizations:</p>
+            <ul>
+                <li><code>draw_line_plot()</code>: Creates a line graph showing daily page views</li>
+                <li><code>draw_bar_plot()</code>: Generates a bar chart of average monthly page views</li>
+                <li><code>draw_box_plot()</code>: Produces box plots to analyze page view trends and seasonality</li>
+            </ul>
+        </div>
+
+        <div class="libraries-used">
+            <h3>Libraries Used</h3>
+            <ul>
+                <li>Pandas: Data manipulation and analysis</li>
+                <li>Matplotlib: Creating static, animated, and interactive visualizations</li>
+                <li>Seaborn: Statistical data visualization based on Matplotlib</li>
+            </ul>
+        </div>
+
+        <div class="key-challenges">
+            <h3>Key Challenges and Solutions</h3>
+            <ul>
+                <li>Data Cleaning: Implemented outlier removal to ensure data quality</li>
+                <li>Date Handling: Converted and parsed dates for accurate time-based analysis</li>
+                <li>Visualization Formatting: Ensured clear and informative plot layouts</li>
+            </ul>
+        </div>
+
+        <div class="project-insights">
+            <h3>Project Insights</h3>
+            <p>The visualizations provide a comprehensive view of FreeCodeCamp forum page views, revealing:</p>
+            <ul>
+                <li>Overall trend of forum engagement</li>
+                <li>Seasonal variations in page views</li>
+                <li>Year-to-year changes in forum activity</li>
+            </ul>
+        </div>
     
             </div>
         </div>

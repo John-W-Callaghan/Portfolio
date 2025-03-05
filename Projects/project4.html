@@ -137,6 +137,31 @@
                 
 
             </div>
+            <div>
+                <h3>Time Calculator</h3>
+
+                <p>This project features a function called `add_time` that allows users to add a specific duration to a given start time while considering AM/PM transitions and optional weekday tracking. Below, I detail the steps I followed in implementing this function:</p>
+
+                <p><strong>1. Function Definition and Input Parsing:</strong> I started by defining the `add_time` function, which takes three parameters: the `start` time in "HH:MM AM/PM" format, the `add` duration in "HH:MM" format, and an optional `day` parameter representing the starting day of the week. The first step is to split the `start` time into its components (time and period) and convert the hour and minutes to integers for further calculations.</p>
+
+                <p><strong>2. Duration Conversion:</strong> I parsed the `add` parameter, converting the hours and minutes from the duration string into integers using the `map` function. This enables straightforward arithmetic operations on the time values.</p>
+
+                <p><strong>3. Carrying Minutes and Hours:</strong> I calculated the total minutes by adding the minutes from the `start` time and the `add` duration. To handle cases where the total minutes exceed 60, I used the `divmod` function to determine how many hours to carry over and the remaining minutes. Subsequently, I added the carry to the hour value.</p>
+
+                <p><strong>4. Handling AM/PM Transitions:</strong> I calculated how many 12-hour cycles the total hours have gone through using `divmod`, which helps in determining the current AM/PM period. The period is updated based on the number of cycles that have occurred. If the hour value becomes zero after calculations, I reset it to 12 for proper formatting.</p>
+
+                <p><strong>5. Formatting Minutes:</strong> To maintain the standard time format, I ensured that minutes are always displayed as two digits. If the calculated minutes are less than 10, I prepend a zero to the minute value.</p>
+
+                <p><strong>6. Weekday Calculation:</strong> If the optional `day` parameter is provided, I initialized a list of days of the week and computed the new day based on how many periods (days later) have passed. The new day is formatted and included in the final output.</p>
+
+                <p><strong>7. Result Formatting:</strong> I constructed the final output string, which includes the updated hour, minutes, period (AM/PM), any new day information, and a note about how many days later the time falls if applicable. This enhances user understanding of the time adjustment.</p>
+
+                <p><strong>8. Return Statement:</strong> The function returns the formatted time string, providing a clear and concise representation of the new time after the specified duration has been added, along with any additional information about the day or the next day.</p>
+
+                <p>This project has reinforced my skills in working with time manipulations, string formatting, and handling user input in Python, ultimately improving my understanding of these concepts.</p>
+
+            </div>
+
         </div>
             <div>
                 <a href="https://github.com/John-W-Callaghan/Portfolio">Link to project</a>
